@@ -1,6 +1,7 @@
 package baseTest;
 
 import generalUtils.PropertiesHelper;
+import hooks.baseHooks;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,18 +19,22 @@ public class BaseTest {
     public static SoftAssert softAssert=null;
 
     public static void setupTest(){
-        configproperties=new PropertiesHelper(System.getProperty("user.dir")+
-                PropertiesHelper.getBaseConfig().getProperty("UIConfigPropertiesPath"));
+        if(configproperties==null) {
+            configproperties = new PropertiesHelper(System.getProperty("user.dir") +
+                    PropertiesHelper.getBaseConfig().getProperty("UIConfigPropertiesPath"));
+        }
         switch (configproperties.properties.getProperty("browser")){
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver=new ChromeDriver();
+                baseHooks.sc.log("Driver launched for test case "+baseHooks.sc.getName());
                 driver.manage().window().maximize();
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
                 break;
         }
 
         driver.get(configproperties.properties.getProperty("url"));
+        baseHooks.sc.log("URL  "+configproperties.properties.getProperty("url")+" for test case "+baseHooks.sc.getName());
         softAssert=new SoftAssert();
         page=new UIBaseClass(driver);
     }
