@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
             ,glue={"uiAutomation/baseTest/stepDefinitions", "uiAutomation/baseTest/hooks"},
          plugin =   {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
            monochrome = true,
-            tags = "@Multithreaded"
+            tags = "@v"
     )
     public class RunnerClass {
 

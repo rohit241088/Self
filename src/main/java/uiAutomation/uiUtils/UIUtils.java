@@ -10,7 +10,7 @@ public class UIUtils {
     public static void clickElement(WebElement element, WebDriverWait wait, JavascriptExecutor js) {
         try {
             element.click();
-        } catch (ElementClickInterceptedException ex) {
+                    } catch (ElementClickInterceptedException ex) {
             js.executeScript("arguments[0].click();", element);
         } catch (ElementNotInteractableException ex) {
             System.out.println("Element not interactable "+element.getTagName());
