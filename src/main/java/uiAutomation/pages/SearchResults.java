@@ -23,7 +23,6 @@ public class SearchResults extends UIBaseClass {
 
     public void verifySearch(String searchValue, SoftAssert softAssert,Scenario sc){
         searchResults().forEach((ele)->{
-
             softAssert.assertTrue(verifyUIElementTextContainsSearchValue(ele,searchValue,sc));
         });
         softAssert.assertAll();

@@ -1,16 +1,13 @@
-package stepDefinitions;
+package uiAutomation.baseTest.stepDefinitions;
 
-import baseTest.BaseTest;
+import uiAutomation.baseTest.BaseTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebElement;
 import uiAutomation.pages.HomePage;
 import uiAutomation.pages.SearchResults;
 
-import java.util.List;
-
-import static hooks.baseHooks.sc;
+import static uiAutomation.baseTest.hooks.baseHooks.sc;
 
 public class GoogleHomePage extends BaseTest {
     SearchResults searchResults=null;

@@ -1,7 +1,7 @@
-package baseTest;
+package uiAutomation.baseTest;
 
 import generalUtils.PropertiesHelper;
-import hooks.baseHooks;
+import uiAutomation.baseTest.hooks.baseHooks;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

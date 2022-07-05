@@ -1,15 +1,13 @@
-package runner;
+package uiAutomation.baseTest.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
-import org.testng.annotations.DataProvider;
 
 @RunWith(Cucumber.class)
     @CucumberOptions(
-            features = "features"
-            ,glue={"stepDefinitions","hooks"},
+            features = "uiFeatures"
+            ,glue={"uiAutomation/baseTest/stepDefinitions", "uiAutomation/baseTest/hooks"},
          plugin =   {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
            monochrome = true,
             tags = "@Multithreaded"
