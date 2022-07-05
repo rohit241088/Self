@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d737ce-58b4-48bc-b07f-4b13824802a3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uiAutomation/uiUtils/UIUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/GoogleHomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/GoogleHomePage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/GoogleHomepage2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/GoogleHomepage2.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiAutomation/UIAutomationInstance/UIPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiAutomation/UIAutomationInstance/UIPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiAutomation/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiAutomation/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiAutomation/pages/SearchResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiAutomation/pages/SearchResults.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/baseHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/baseHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/GoogleHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/GoogleHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +162,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/uiAutomation/UIAutomationInstance/UIPage.java</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -167,18 +172,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/GoogleHomePage.java</url>
-          <line>16</line>
+          <line>18</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/GoogleHomePage.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

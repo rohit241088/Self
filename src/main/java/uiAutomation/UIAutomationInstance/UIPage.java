@@ -3,6 +3,7 @@ package uiAutomation.UIAutomationInstance;
 
 import generalUtils.PropertiesHelper;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,9 +20,11 @@ public class UIPage {
     public WebDriver driver;
     public WebDriverWait wait;
 public Map<String,String> pageObjects=null;
+public JavascriptExecutor js;
    public UIPage(WebDriver driver){
         this.initiateUIAutomationInstance();
         this.driver=driver;
+        js=(JavascriptExecutor)driver;
         wait=new WebDriverWait(driver, Duration.ofSeconds(30));
     }
      public void initiateUIAutomationInstance() {

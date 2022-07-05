@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import uiAutomation.BaseClass.UIBaseClass;
+import uiAutomation.uiUtils.UIUtils;
 
 public class HomePage extends UIBaseClass {
 
@@ -13,7 +14,7 @@ public class HomePage extends UIBaseClass {
            }
 
 public WebElement SearchField(){
-        return driver.findElement(By.xpath(pageObjects.get("searchField").
+         return driver.findElement(By.xpath(pageObjects.get("searchField").
                 split("@@@")[1]));
 }
 

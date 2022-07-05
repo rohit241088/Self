@@ -1,4 +1,4 @@
-Feature: Google Home page search feature
+Feature: Google Home page search feature with random values
   @Multithreaded
   Scenario Outline: Following is a test on google home page search feature
     Given User is on home page
@@ -6,5 +6,5 @@ Feature: Google Home page search feature
     Then each search results should contain "<string>"
     Examples:
       |string|
-      |Rohit Sharma|
-      |Ravikant Singh|
+      |Vivek Sharma|
+      |Sachin Singh|

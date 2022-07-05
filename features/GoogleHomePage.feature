@@ -1,5 +1,5 @@
 Feature: Google Home page search feature
-  @Regression
+  @Smoke
   Scenario Outline: Following is a test on google home page search feature
     Given User is on home page
     When Searches for "<string>"

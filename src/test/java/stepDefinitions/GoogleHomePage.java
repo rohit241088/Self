@@ -10,6 +10,8 @@ import uiAutomation.pages.SearchResults;
 
 import java.util.List;
 
+import static hooks.baseHooks.sc;
+
 public class GoogleHomePage extends BaseTest {
     SearchResults searchResults=null;
     @Given("User is on home page")
@@ -25,6 +27,6 @@ public class GoogleHomePage extends BaseTest {
     @Then("each search results should contain {string}")
     public void each_search_results_should_contain(String string) {
         // Write code here that turns the phrase above into concrete actions
-softAssert.assertTrue(searchResults.validateSearchResults(string));
+searchResults.verifySearch(string,softAssert,sc);
     }
 }
