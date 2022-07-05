@@ -45,6 +45,7 @@ if(sc.isFailed()){
     String bytes=((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.BASE64);
     //sc.attach(bytes,"screenshot",sc.getName());
     try {
+
         ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(bytes);
         sc.log("screenshot");
     } catch (IOException e) {
