@@ -17,4 +17,14 @@ public class SearchResults extends UIBaseClass {
         return driver.findElements(By.xpath(pageObjects.get("searchResults").split("@@@")[1]));
     }
 
+
+    public boolean validateSearchResults(String searchString){
+        return searchResults().stream().allMatch((s)->{
+            System.out.println("Get text value "+s.getText()+" against search value "+searchString);
+              return s.getText().toUpperCase().contains(searchString.toUpperCase());
+
+                });
+
+    }
+
 }

@@ -25,11 +25,6 @@ public class GoogleHomePage extends BaseTest {
     @Then("each search results should contain {string}")
     public void each_search_results_should_contain(String string) {
         // Write code here that turns the phrase above into concrete actions
-        List<WebElement> allResults=searchResults.searchResults();
-for(int i=0;i<allResults.size();i++){
-        softAssert.assertTrue(allResults.get(i).getText().toUpperCase().contains(string.toUpperCase()));
-    System.out.println("Matching "+allResults.get(i).getText().toUpperCase()+" against search value "+string.toUpperCase());
-}
-softAssert.assertAll();
+softAssert.assertTrue(searchResults.validateSearchResults(string));
     }
 }

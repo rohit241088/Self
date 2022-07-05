@@ -1,7 +1,11 @@
 package hooks;
 
 import baseTest.BaseTest;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import generalUtils.PropertiesHelper;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -45,7 +49,6 @@ if(sc.isFailed()){
     String bytes=((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.BASE64);
     //sc.attach(bytes,"screenshot",sc.getName());
     try {
-
         ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(bytes);
         sc.log("screenshot");
     } catch (IOException e) {
